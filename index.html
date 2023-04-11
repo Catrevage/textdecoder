@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <div class="text-input">
+                <div class="logo">
+                    <img src="assets/img/path292.png" alt="logo">
+                </div>
+                
+                <textarea placeholder="Digite seu texto aqui..."></textarea>
+                
+                <span>
+                    <img src="assets/img/g22.png" alt="excl">
+                    Apenas letras menúsculas e sem acento.
+                </span>
+                
+                <div class="botao">
+                    <button class="encript" onclick="encript()">Critografar</button>
+                    <button class="decript" onclick="decript()">Descriptografar</button>
+                </div>
+                
+            </div>
+            <div class="text-output">
+                <div class="no-message">
+                    
+                    <img src="assets/img/g286.png" alt="image">
+                    <h1>Nenhuma mensagem <br> encontrada</h1>
+                    <h2>Digite um texto que você deseja<br> criptografar ou descriptografar</h2>
+
+                </div>
+                <div class="message">
+                    
+                    <textarea class="output"></textarea>
+                    <button class="botao" onclick="copiar()">Copiar</button>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Develop by Damião Junior</p>
+        <a href="https://github.com/Catrevage" target="_blank">
+            <p><img src="assets/img/github.png" width="20px" alt="git">@catrevage</p>
+        </a>
+        
+    </footer>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>    
+</body>
+</html>

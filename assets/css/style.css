@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #f3f5fc;
+}
+
+section {
+    width: 1200px;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+/* Input */
+.content .text-input {
+    height: calc(100vh - 110px);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.botao {
+    flex-direction: row;
+    margin-left: 100px;
+    
+}
+
+button {
+    height: 50px;
+    width: 240px;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #dedfe8;
+}
+
+button:hover {
+    background-color: #0a3871;
+    color: #ffffff;
+}
+
+.botao .decript {
+    margin-left: 20px;
+}
+
+
+textarea {
+    width: 70%;
+    height: 740px;
+    color: #0a3871;
+    margin-left: 100px;
+    resize: none;
+    border: none;
+    font-size: 25px;
+    background-color: #f3f5fc;
+}
+
+textarea::placeholder {
+    font-size: 30px;
+    color: #0a3871;
+}
+
+
+span {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Output */
+
+.content .text-output{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content .text-output .no-message {
+    display: block;
+}
+
+.content .text-output .message {
+    display: none;
+}
+
+
+.content .text-output textarea {
+    width: 90%;
+    height: 680px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.content .text-output .botao {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.content .text-output h1 {
+    color: #343a40;
+
+}
+
+.content .text-output h2 {
+    color: #a4a7ab;
+    font-size: 15px;
+
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: #343a40;
+}
+
+footer a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+footer img {
+    margin-right: 5px;
+}
