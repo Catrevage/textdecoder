@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     background-color: #f3f5fc;
+    padding: 0px;
 }
 
 section {
@@ -14,12 +15,13 @@ section {
 }
 
 .content {
+    height: calc(100vh - 120px);
     display: flex;
+
 }
 
 /* Input */
 .content .text-input {
-    height: calc(100vh - 110px);
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -99,7 +101,7 @@ span {
 
 .content .text-output textarea {
     width: 90%;
-    height: 680px;
+    height: 75vh;
     background-color: #ffffff;
     margin: auto;
 }
@@ -124,6 +126,7 @@ span {
 footer {
     text-align: center;
     font-weight: bold;
+    padding: 5px;
     color: #343a40;
 }
 
@@ -134,4 +137,80 @@ footer a {
 
 footer img {
     margin-right: 5px;
+}
+
+/*Responsividade */
+
+@media (max-width: 768px) {
+    
+    section {
+        width: 700px;
+        
+    }
+    
+    .content {
+        flex-direction: column;
+        height: auto;
+    
+    }
+    
+    .content .text-input {
+        margin: auto;
+        width: 100%;
+        
+    
+    }
+
+    .botao {
+        margin-left: 50px;
+    }
+
+    span {
+        margin-left: 0px;
+    }
+
+    textarea {
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 90%;
+        
+    }
+
+    .content .text-output {
+        width: 100%;
+    }
+    .content .text-output {
+        margin: auto;
+    }
+
+    .no-message img {
+        display: none;
+    }
+
+    .no-message {
+
+        width: 90%;
+    }
+
+    footer {
+        clear: both;
+        width: auto;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    section {
+        width: 380px;
+        
+    }
+
+    .botao {
+        margin-left: 0px;
+    }
+
+    button {
+        width: 150px;
+    }
 }
